@@ -2,8 +2,12 @@
 import openai
 from PIL import Image
 import streamlit as st
+from pathlib import Path
+
+
 with st.sidebar:
-    image1 = Image.open('./images/logo1.png')
+    image_path = Path('images/logo1.png')
+    image1 = Image.open(image_path)
     st.image(image1)
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
