@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 with st.sidebar:
-    image_path = Path('images/logo1.png')
+    image_path = Path('streamlit/images/logo1.png')
     image1 = Image.open(image_path)
     st.image(image1)
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
