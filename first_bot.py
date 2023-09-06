@@ -19,7 +19,6 @@ with st.sidebar:
     st.markdown("This chatbot will answer all of your questions about robot dogs.")
     st.markdown("For more information about our team and what we get up to please check out our **substack:** https://waterstonsinnovation.substack.com/")
 
-
 image_path = Path('streamlit/images/robot_dog.png')
 image1 = Image.open(image_path)
 st.image(image1, use_column_width=True)
@@ -44,7 +43,8 @@ if prompt := st.chat_input():
     openai.api_key = st.secrets.api_credentials.api_key
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user", avatar=user_img).write(prompt)
-    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages)
+    response = openai.ChatCompletion.create(model="gpt-4", messages=st.session_state.messages)
     msg = response.choices[0].message
     st.session_state.messages.append(msg)
     st.chat_message("assistant", avatar=assistant_img).write(msg.content)
+
