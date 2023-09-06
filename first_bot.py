@@ -4,6 +4,12 @@ from PIL import Image
 import streamlit as st
 from pathlib import Path
 
+image_path = Path('streamlit/images/logo1.png')
+logo = Image.open(image_path)
+st.set_page_config(
+    page_title="Innovation Bot",
+    page_icon=logo,
+)
 
 with st.sidebar:
     image_path = Path('streamlit/images/logo1.png')
