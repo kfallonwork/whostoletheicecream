@@ -22,9 +22,7 @@ with st.sidebar:
 image_path = Path('streamlit/images/lego_banner.png')
 image1 = Image.open(image_path)
 st.image(image1, use_column_width=True)
-image_path = Path('streamlit/images/icecream.png')
-image1 = Image.open(image_path)
-st.image(image1, use_column_width=True)
+
 
 
 image_path = Path('streamlit/images/assistant.png')
