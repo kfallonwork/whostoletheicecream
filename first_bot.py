@@ -16,7 +16,7 @@ with st.sidebar:
     logo = Image.open(image_path)
     st.image(logo)
     st.title("Who stole the Lego?")
-    st.markdown("A member of the Waterstons Data team has stolen the Lego at Data Scotland. The bot was a witness, can you use its clues to figure out the culprit?")
+    st.markdown("A member of the Waterstons Data team has stolen the Lego at Data Scotland. The bot was a witness, can you use its clues to figure out the culprit? WHen you're ready to make a guess, please submit your answer in the form *name*")
     st.markdown("Also please read the Innovation team's **substack:** https://waterstonsinnovation.substack.com/")
 
 image_path = Path('streamlit/images/lego_banner.png')
