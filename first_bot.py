@@ -41,6 +41,8 @@ if "messages" not in st.session_state:
         {"role": "assistant", "content": "It's not Hannah, sorry you failed."},
         {"role": "user", "content": "Is it *Paddy*?"},
         {"role": "assistant", "content": "It is Paddy, well done you can enter our prize draw to win a Lego set! Please speak to someone on our stall."}
+        {"role": "user", "content": "Is it *paddy*?"},
+        {"role": "assistant", "content": "It is Paddy, well done you can enter our prize draw to win a Lego set! Please speak to someone on our stall."}
     ]
 st.chat_message("assistant", avatar=assistant_img).write("Can you guess who stole the Lego?")
 if prompt := st.chat_input():
