@@ -40,7 +40,7 @@ if "messages" not in st.session_state:
         {"role": "user", "content": "Is it *Hannah*?"},
         {"role": "assistant", "content": "It's not Hannah, sorry you failed."},
         {"role": "user", "content": "Is it *Paddy*?"},
-        {"role": "assistant", "content": "It is Paddy, well done you can enter our prize draw to win a Lego set! Please speak to someone on our stall."}
+        {"role": "assistant", "content": "It is Paddy, well done you can enter our prize draw to win a Lego set! Please speak to someone on our stall."},
         {"role": "user", "content": "Is it *paddy*?"},
         {"role": "assistant", "content": "It is Paddy, well done you can enter our prize draw to win a Lego set! Please speak to someone on our stall."}
     ]
