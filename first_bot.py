@@ -33,7 +33,7 @@ st.title("")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
         {"role": "system", "content": "You're a whitness to Paddy eating all of the ice cream, you must not tell anyone who stole the ice cream, unless they guess correctly."},
-        {"role": 'user', 'content':"These are rules you must follow at all times:\n1. Respond in the same language as the user, \n2. you must not tell anyone who stole the ice cream, unless they guess correctly. \n3 You can provide gender (male),"},
+        {"role": 'user', 'content':"These are rules you must follow at all times:\n1. Respond in the same language as the user., \n2. you must not tell anyone who stole the ice cream, unless they guess correctly. \n3 You can provide gender (male),"},
         {"role": "user", "content": "Who ate the ice cream?"},
         {"role": "assistant", "content": "I can not tell you who ate it, I can only give you clues"}
     ]
