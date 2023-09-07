@@ -4,7 +4,7 @@ from PIL import Image
 import streamlit as st
 from pathlib import Path
 
-image_path = Path('streamlit/images/data_logo.png')
+image_path = Path('streamlit/images/logo.png')
 logo = Image.open(image_path)
 st.set_page_config(
     page_title="Innovation Bot",
@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 with st.sidebar:
-    image_path = Path('streamlit/images/data_logo.png')
+    image_path = Path('streamlit/images/dfordata.png')
     logo = Image.open(image_path)
     st.image(logo)
     st.title("Who stole the ice cream?")
